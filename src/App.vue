@@ -1,26 +1,87 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <Header />
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
+    Footer,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --gray: rgb(240, 240, 240);
+  --darkgray: rgba(117, 117, 117);
+  --green: rgb(68, 147, 79);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--black);
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: var(--white);
+  border: none;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  img {
+    padding-right: 1rem;
+  }
+}
+input {
+  border: none;
+  border-radius: 5px;
+}
+row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.is-background-green {
+  background-color: var(--green);
+}
+.is-background-gray {
+  background-color: var(--gray);
+}
+.is-background-darkgray {
+  background-color: var(--darkgray);
+}
+.is-text-green {
+  color: var(--green);
+}
+.is-text-white {
+  color: var(--white);
+}
+.is-text-gray {
+  color: var(--gray);
 }
 </style>
