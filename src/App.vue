@@ -82,13 +82,12 @@ a {
 }
 button,
 .is-rounded-btn {
-  background-color: var(--white);
   border: none;
   padding: 0.6rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 100px;
 
   img {
     padding-right: 1rem;

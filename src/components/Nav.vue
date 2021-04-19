@@ -6,6 +6,7 @@
       :text="category.text"
       :href="category.link"
       :icon="category.icon"
+      :index="index"
     ></NavBtn>
   </div>
 </template>
@@ -36,6 +37,20 @@ export default {
 
   .nav-btn {
     width: 100%;
+  }
+}
+@media (min-width: 1023px) {
+  .nav-btns-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    .nav-btn {
+      width: 33.3333333%;
+      margin: 0;
+      box-sizing: border-box;
+      border-top: 1px solid var(--lightgray);
+      border-right: 1px solid var(--lightgray);
+    }
   }
 }
 </style>

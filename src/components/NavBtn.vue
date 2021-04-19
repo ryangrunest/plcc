@@ -21,6 +21,10 @@ export default {
     text: String,
     href: String,
     icon: String,
+    index: Number,
+  },
+  created() {
+    console.log(this.index);
   },
 };
 </script>
@@ -63,6 +67,27 @@ export default {
       top: calc(50% - 0.6rem);
       right: 0;
       left: auto;
+    }
+  }
+}
+@media (min-width: 1023px) {
+  .nav-btn {
+    text-align: center;
+    a {
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      padding-left: 30%;
+      span {
+        padding-left: 1rem;
+      }
+      .icon-container {
+        position: relative;
+      }
+    }
+    .arrow-icon {
+      display: none;
     }
   }
 }

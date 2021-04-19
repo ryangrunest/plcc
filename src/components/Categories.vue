@@ -45,4 +45,15 @@ export default {
     left: auto;
   }
 }
+@media (min-width: 1023px) {
+  .categories-container {
+    padding: 2rem;
+    a {
+      text-align: center;
+    }
+    .arrow-icon {
+      display: none;
+    }
+  }
+}
 </style>
