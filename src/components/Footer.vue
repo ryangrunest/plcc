@@ -1,7 +1,7 @@
 <template>
   <footer class="is-background-darkgray">
-    <row>
-      <container>
+    <div class="row">
+      <div class="container">
         <a href="#" class="h3 is-text-white">Support Center</a>
         <a href="#" class="h3 is-text-white">800-25-Platt</a>
         <a href="#" class="h4 is-text-white">800-257-5288</a>
@@ -11,13 +11,13 @@
           <img src="@/assets/ic/black/ic_chat.png" alt="live help icon" />
           <span>Live Help</span>
         </button>
-      </container>
-    </row>
-    <row class="footer-btns-row">
+      </div>
+    </div>
+    <div class="row footer-btns-row">
       <a class="is-text-white text-left" href="#">Contact Us</a>
       <a class="is-text-white text-center" href="#">What's New</a>
       <a class="is-text-white text-right" href="#">FAQ's</a>
-    </row>
+    </div>
   </footer>
 </template>
 

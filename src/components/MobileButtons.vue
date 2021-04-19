@@ -1,24 +1,24 @@
 <template>
-  <row class="mobile-btns-row">
-    <container class="mobile-btn-container">
+  <div class="row mobile-btns-row">
+    <div class="container mobile-btn-container">
       <a class="is-background-white" href="#">
         <img src="@/assets/ic/green/ic_line_style.png" alt="categories icon" />
       </a>
       <span>Categories</span>
-    </container>
-    <container class="mobile-btn-container">
+    </div>
+    <div class="container mobile-btn-container">
       <a class="is-background-white" href="#">
         <img src="@/assets/ic/green/ic_search.png" alt="search icon" />
       </a>
       <span>Search</span>
-    </container>
-    <container class="mobile-btn-container">
+    </div>
+    <div class="container mobile-btn-container">
       <a class="is-background-white" href="#">
         <img src="@/assets/ic/green/ic_scanner.png" alt="scanner icon" />
       </a>
       <span>Scan</span>
-    </container>
-  </row>
+    </div>
+  </div>
 </template>
 
 <script>

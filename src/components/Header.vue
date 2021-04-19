@@ -1,13 +1,13 @@
 <template>
   <header class="is-background-green" id="header">
-    <navbar>
-      <row>
-        <column>
-          <navbar-brand>
+    <div class="navbar">
+      <div class="row">
+        <div class="column">
+          <div class="navbar-brand">
             <img src="@/assets/img/logo.png" alt="Platt Logo" />
-          </navbar-brand>
-        </column>
-        <column class="nav-links-column">
+          </div>
+        </div>
+        <div class="column nav-links-column">
           <a href="#"
             ><img src="@/assets/ic/white/ic_search.png" alt="search icon"
           /></a>
@@ -20,13 +20,13 @@
           <a href="#"
             ><img src="@/assets/ic/white/ic_menu.png" alt="menu icon"
           /></a>
-        </column>
-      </row>
-      <row class="navbar-search-row">
+        </div>
+      </div>
+      <div class="row navbar-search-row">
         <input placeholder="What are you looking for?" type="text" />
         <img src="@/assets/ic/black/ic_search.png" alt="search icon" />
-      </row>
-    </navbar>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -53,7 +53,7 @@ input {
     right: 3rem;
   }
 }
-navbar-brand {
+.navbar-brand {
   max-width: 50%;
   img {
     height: 2rem;

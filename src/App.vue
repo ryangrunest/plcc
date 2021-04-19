@@ -98,7 +98,7 @@ input {
   border: none;
   border-radius: 3px;
 }
-row {
+.row {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -107,7 +107,7 @@ row {
   padding: 1.2rem 1rem;
   padding-bottom: 0;
 
-  column {
+  .column {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -118,7 +118,7 @@ row {
     }
   }
 }
-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,9 @@
 <template>
-  <row class="deals-row">
+  <div class="row deals-row">
     <a class="is-card" href="#"
       ><img src="@/assets/panel/deal.png" alt="todays deals"
     /></a>
-  </row>
+  </div>
 </template>
 
 <script>
