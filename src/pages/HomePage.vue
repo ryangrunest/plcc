@@ -1,10 +1,14 @@
 <template>
   <section class="main-section">
-    <row class="is-background-white">
+    <row class="is-background-white categories-container">
       <a href="#">
         <img src="@/assets/ic/black/ic_categories.png" alt="shopping icon" />
-        <span>Shop All Categories</span></a
-      >
+        <span>Shop All Categories</span>
+        <img
+          class="arrow-icon"
+          src="@/assets/ic/black/ic_arrow_forward.png"
+          alt="arrow icon"
+      /></a>
     </row>
     <row class="nav-btns-container is-background-white">
       <NavBtn
@@ -15,34 +19,8 @@
         :icon="category.icon"
       ></NavBtn>
     </row>
-    <row class="mobile-btns-row">
-      <container class="mobile-btn-container">
-        <a class="is-background-white" href="#">
-          <img
-            src="@/assets/ic/green/ic_line_style.png"
-            alt="categories icon"
-          />
-        </a>
-        <span>Categories</span>
-      </container>
-      <container class="mobile-btn-container">
-        <a class="is-background-white" href="#">
-          <img src="@/assets/ic/green/ic_search.png" alt="search icon" />
-        </a>
-        <span>Search</span>
-      </container>
-      <container class="mobile-btn-container">
-        <a class="is-background-white" href="#">
-          <img src="@/assets/ic/green/ic_scanner.png" alt="scanner icon" />
-        </a>
-        <span>Scan</span>
-      </container>
-    </row>
-    <row class="deals-row">
-      <a class="is-card" href="#"
-        ><img src="@/assets/panel/deal.png" alt="todays deals"
-      /></a>
-    </row>
+    <MobileButtons />
+    <Deals />
     <row class="members-row">
       <container class="is-card is-background-white">
         <img src="@/assets/img/platt-plus.png" alt="Platt Plus Membership" />
@@ -100,16 +78,32 @@
         </a>
       </container>
     </row>
+    <row class="app-download-row">
+      <container class="is-card is-background-white">
+        <a href="#">
+          <!-- <img
+            src="@/assets/panel/app-get-banner.png"
+            alt="download the mobile app"
+          /> -->
+          <div class="bg-img"></div>
+          <span>Shop Better, download the Platt App today</span>
+        </a>
+      </container>
+    </row>
   </section>
 </template>
 
 <script>
 import NavBtn from "@/components/NavBtn.vue";
+import MobileButtons from "@/components/MobileButtons.vue";
+import Deals from "@/components/Deals.vue";
 import store from "../store";
 export default {
   name: "HomePage",
   components: {
     NavBtn,
+    MobileButtons,
+    Deals,
   },
   props: {},
   data() {
@@ -121,38 +115,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.categories-container {
+  padding: 2.2rem 2rem;
+  position: relative;
+  a {
+    position: relative;
+    width: 100%;
+    img {
+      position: absolute;
+
+      width: 1.5rem;
+    }
+    span {
+      padding-left: 3rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+  .arrow-icon {
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    top: calc(50% - 0.75rem);
+    right: 0;
+    left: auto;
+  }
+}
 .nav-btns-container {
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 2rem;
+  padding-bottom: 0.8rem;
 
   .nav-btn {
     width: 100%;
-  }
-}
-.mobile-btns-row {
-  background-color: var(--gray);
-}
-.mobile-btn-container {
-  width: auto;
-  a {
-    padding: 1.5rem;
-    border-radius: 100px;
-    margin-bottom: 1rem;
-    box-shadow: 0px 2px 5px -1px rgb(0 0 0 / 30%);
-    img {
-      width: 2.2rem;
-      height: auto;
-    }
-  }
-}
-.deals-row {
-  a {
-    width: 100%;
-    height: auto;
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
 }
 .recently-viewed-row {
@@ -176,6 +172,7 @@ export default {
 }
 .quick-links-row {
   flex-wrap: wrap;
+  margin-bottom: -1rem;
   .is-card {
     width: 48%;
     height: 15rem;
@@ -201,6 +198,27 @@ export default {
         font-weight: 600;
       }
     }
+  }
+}
+.app-download-row {
+  padding-bottom: 1.5rem;
+  a {
+    width: 100%;
+  }
+  .bg-img {
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    background-image: url("/assets/panel/app-get-banner.png");
+  }
+  span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
 </style>

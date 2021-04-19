@@ -33,9 +33,52 @@ export default {
   padding: 0;
   font-size: 15px;
   color: var(--black);
+  .mt-0 {
+    margin-top: 0;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .is-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 60%);
+  }
+  .is-background-green {
+    background-color: var(--green);
+  }
+  .is-background-gray {
+    background-color: var(--gray);
+  }
+  .is-background-darkgray {
+    background-color: var(--darkgray);
+  }
+  .is-background-white {
+    background-color: var(--white);
+  }
+  .is-text-green {
+    color: var(--green);
+  }
+  .is-text-white {
+    color: var(--white);
+  }
+  .is-text-gray {
+    color: var(--gray);
+  }
 }
 a {
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 button,
 .is-rounded-btn {
@@ -53,7 +96,7 @@ button,
 }
 input {
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 row {
   display: flex;
@@ -61,7 +104,8 @@ row {
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 1.2rem 1rem;
+  padding-bottom: 0;
 
   column {
     display: flex;
@@ -82,34 +126,7 @@ container {
   width: 100%;
   height: 100%;
 }
-.is-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 60%);
-}
-.is-background-green {
-  background-color: var(--green);
-}
-.is-background-gray {
-  background-color: var(--gray);
-}
-.is-background-darkgray {
-  background-color: var(--darkgray);
-}
-.is-background-white {
-  background-color: var(--white);
-}
-.is-text-green {
-  color: var(--green);
-}
-.is-text-white {
-  color: var(--white);
-}
-.is-text-gray {
-  color: var(--gray);
-}
+
 #app {
   background-color: var(--gray);
   margin-bottom: 2.5rem;
