@@ -41,8 +41,8 @@ export default {
     }
 
     span {
-      padding-left: 2em;
-      font-size: 1.5rem;
+      padding-left: 3rem;
+      font-size: 1.2rem;
     }
 
     .arrow-icon {

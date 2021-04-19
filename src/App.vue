@@ -37,7 +37,8 @@ export default {
 a {
   text-decoration: none;
 }
-button {
+button,
+.is-rounded-btn {
   background-color: var(--white);
   border: none;
   padding: 0.6rem 1rem;
@@ -81,12 +82,12 @@ container {
   width: 100%;
   height: 100%;
 }
-card {
+.is-card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 60%);
 }
 .is-background-green {
   background-color: var(--green);
@@ -96,6 +97,9 @@ card {
 }
 .is-background-darkgray {
   background-color: var(--darkgray);
+}
+.is-background-white {
+  background-color: var(--white);
 }
 .is-text-green {
   color: var(--green);
@@ -109,5 +113,6 @@ card {
 #app {
   background-color: var(--gray);
   margin-bottom: 2.5rem;
+  font-family: "Helvetica Neue", sans-serif;
 }
 </style>
