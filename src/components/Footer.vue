@@ -29,9 +29,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-footer {
-  margin-bottom: 5rem;
-}
 button {
   width: 17rem;
   margin: 2rem 0;

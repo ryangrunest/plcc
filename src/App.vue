@@ -1,16 +1,19 @@
 <template>
   <Header />
+  <HomePage />
   <Footer />
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import HomePage from "./pages/HomePage.vue";
 import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Header,
+    HomePage,
     Footer,
   },
 };
@@ -21,6 +24,7 @@ export default {
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
   --gray: rgb(240, 240, 240);
+  --lightgray: rgb(195, 195, 195);
   --darkgray: rgba(117, 117, 117);
   --green: rgb(68, 147, 79);
 }
@@ -57,6 +61,17 @@ row {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
+
+  column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &:last-of-type {
+      justify-content: flex-end;
+    }
+  }
 }
 container {
   display: flex;
@@ -65,6 +80,13 @@ container {
   flex-direction: column;
   width: 100%;
   height: 100%;
+}
+card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .is-background-green {
   background-color: var(--green);
@@ -83,5 +105,9 @@ container {
 }
 .is-text-gray {
   color: var(--gray);
+}
+#app {
+  background-color: var(--gray);
+  margin-bottom: 2.5rem;
 }
 </style>
