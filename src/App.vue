@@ -33,6 +33,10 @@ export default {
   padding: 0;
   font-size: 15px;
   color: var(--black);
+
+  &:focus {
+    outline: 3px solid var(--green);
+  }
   .mt-0 {
     margin-top: 0;
   }
@@ -74,10 +78,21 @@ export default {
     color: var(--gray);
   }
 }
-a {
+a,
+button {
   text-decoration: none;
   &:hover {
     cursor: pointer;
+  }
+}
+
+button,
+input,
+.is-rounded-btn {
+  transition: 0.6s all cubic-bezier(0.2, 1.23, 0.84, 0.71);
+  &:hover,
+  &:active {
+    box-shadow: 0px 3px 10px 3px rgb(0 0 0 / 30%);
   }
 }
 button,
@@ -130,5 +145,17 @@ input {
   background-color: var(--gray);
   margin-bottom: 2.5rem;
   font-family: "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 1023px) {
+  #app {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1439px) {
+  * {
+    font-size: 35px;
+  }
 }
 </style>

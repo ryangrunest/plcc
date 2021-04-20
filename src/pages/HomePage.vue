@@ -45,6 +45,7 @@ export default {
     column-gap: 1rem;
     align-items: center;
     align-content: start;
+    justify-content: center;
   }
 }
 </style>

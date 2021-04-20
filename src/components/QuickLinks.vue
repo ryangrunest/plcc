@@ -52,7 +52,7 @@ export default {
       text-align: center;
       img {
         width: 100%;
-        max-width: 13rem;
+        max-width: 8rem;
         height: auto;
       }
       span {
@@ -75,6 +75,9 @@ export default {
     .is-card {
       width: 20%;
       margin: 0;
+      a {
+        width: 100%;
+      }
     }
   }
 }

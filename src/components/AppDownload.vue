@@ -38,6 +38,13 @@ export default {
     font-weight: 500;
   }
 }
+@media (min-width: 850px), (max-width: 1023px) {
+  .app-download-row {
+    .bg-img {
+      padding-bottom: 2rem;
+    }
+  }
+}
 @media (min-width: 1023px) {
   .app-download-row {
     grid-row: 6;
@@ -49,6 +56,13 @@ export default {
       width: 100%;
       height: auto;
       padding-bottom: 12rem;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .app-download-row {
+    .bg-img {
+      padding-bottom: 20rem;
     }
   }
 }

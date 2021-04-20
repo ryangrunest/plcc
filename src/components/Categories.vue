@@ -49,9 +49,10 @@ export default {
   .categories-container {
     grid-column: 1 / 5;
     grid-row: 1;
-    padding: 1.5rem;
+    padding: 0;
     a {
       text-align: center;
+      padding: 1.5rem;
     }
     .arrow-icon {
       display: none;

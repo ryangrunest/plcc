@@ -44,6 +44,7 @@ button {
   img {
     position: absolute;
     left: 4rem;
+    width: 1rem;
   }
 }
 .h3 {
