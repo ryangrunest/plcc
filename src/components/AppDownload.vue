@@ -38,4 +38,18 @@ export default {
     font-weight: 500;
   }
 }
+@media (min-width: 1023px) {
+  .app-download-row {
+    grid-row: 6;
+    grid-column: 1 / 5;
+    padding: 0;
+    margin: 1.5rem;
+    margin-top: 0;
+    .bg-img {
+      width: 100%;
+      height: auto;
+      padding-bottom: 12rem;
+    }
+  }
+}
 </style>

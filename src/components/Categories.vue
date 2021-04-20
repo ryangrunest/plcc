@@ -47,7 +47,9 @@ export default {
 }
 @media (min-width: 1023px) {
   .categories-container {
-    padding: 2rem;
+    grid-column: 1 / 5;
+    grid-row: 1;
+    padding: 1.5rem;
     a {
       text-align: center;
     }

@@ -41,9 +41,12 @@ export default {
 }
 @media (min-width: 1023px) {
   .nav-btns-container {
+    grid-column: 1 / 5;
+    grid-row: 2;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    border-bottom: 1px solid var(--lightgray);
     .nav-btn {
       width: 33.3333333%;
       margin: 0;

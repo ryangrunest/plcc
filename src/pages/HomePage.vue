@@ -37,4 +37,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media (min-width: 1023px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    align-content: start;
+  }
+}
+</style>

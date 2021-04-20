@@ -49,4 +49,20 @@ img {
     font-size: 1.2rem;
   }
 }
+@media (min-width: 1023px) {
+  .members-row {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    padding: 0;
+    margin: 1.5rem;
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem 4rem;
+      img {
+        max-width: 25rem;
+      }
+    }
+  }
+}
 </style>

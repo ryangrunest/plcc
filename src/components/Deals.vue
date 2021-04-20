@@ -24,4 +24,17 @@ export default {
     }
   }
 }
+@media (min-width: 1023px) {
+  .deals-row {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    padding: 0;
+    margin-left: 1.5rem;
+    a {
+      img {
+        height: 15rem;
+      }
+    }
+  }
+}
 </style>

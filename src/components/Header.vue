@@ -1,7 +1,7 @@
 <template>
   <header class="is-background-green" id="header">
     <div class="navbar">
-      <div class="row">
+      <div class="row navbar-main-row">
         <div class="column">
           <div class="navbar-brand">
             <img src="@/assets/img/logo.png" alt="Platt Logo" />
@@ -65,9 +65,23 @@ input {
   max-width: 50%;
   display: flex;
   justify-content: space-between;
+  a {
+    margin-left: 1.3rem;
+  }
+  :first-child {
+    margin-left: 0;
+  }
+
   img {
     width: 1.6rem;
     height: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar-main-row {
+    padding: 2rem;
+    padding-bottom: 0;
   }
 }
 </style>

@@ -36,11 +36,43 @@ export default {
     .card-header {
       width: 100%;
       padding: 0;
+      * {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
     }
     .card-content {
-      // overflow-x: scroll;
       a {
         display: inline-block;
+      }
+    }
+  }
+}
+@media (min-width: 1023px) {
+  .recently-viewed-row {
+    grid-row: 4;
+    grid-column: 3 / 5;
+    padding: 0;
+    margin-right: 1.5rem;
+    height: 15rem;
+    .container {
+      padding: 0 2rem;
+      justify-content: space-between;
+      .card-header {
+        width: calc(100% - 2rem);
+        padding-top: 1.5rem;
+        padding-bottom: 0;
+      }
+      .card-content {
+        padding: 0;
+        flex-grow: 1;
+        a {
+          width: 30%;
+          max-width: 10rem;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }

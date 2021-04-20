@@ -52,6 +52,7 @@ export default {
       text-align: center;
       img {
         width: 100%;
+        max-width: 13rem;
         height: auto;
       }
       span {
@@ -62,6 +63,18 @@ export default {
         font-size: 1.2rem;
         font-weight: 600;
       }
+    }
+  }
+}
+@media (min-width: 1023px) {
+  .quick-links-row {
+    grid-row: 5;
+    grid-column: 1 / 5;
+    margin: 1.5rem;
+    padding: 0;
+    .is-card {
+      width: 20%;
+      margin: 0;
     }
   }
 }

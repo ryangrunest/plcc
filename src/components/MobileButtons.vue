@@ -46,4 +46,10 @@ export default {
     }
   }
 }
+
+@media (min-width: 1023px) {
+  .mobile-btns-row {
+    display: none;
+  }
+}
 </style>
