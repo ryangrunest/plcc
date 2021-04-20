@@ -155,7 +155,7 @@ input {
 
 @media (min-width: 1439px) {
   * {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 </style>
